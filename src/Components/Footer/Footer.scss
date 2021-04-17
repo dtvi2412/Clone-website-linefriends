@@ -1,0 +1,39 @@
+$bg-color:#383838;
+.footer{
+    background-color: $bg-color;
+    display: flex;
+    justify-content: space-around;
+
+
+    padding-top:40px;
+    padding-bottom: 170px;
+    &__logo{
+        h1{
+            font-size:1.5rem;
+            color:#ACACAC;
+            font-weight: 500;
+        }
+    }
+    &__list{
+        a{
+            text-decoration: none;
+            color:#ACACAC;
+            margin-right:20px;
+            font-size:0.9rem;
+        }
+        p{
+            color:gray;
+            font-size:0.8rem;
+        }
+    }
+    &__social{
+        display: flex;
+
+        justify-content: space-between;
+        .MuiSvgIcon-root{
+            color:#ACACAC;
+            font-size:1.3rem;
+            margin:0 10px;
+        }
+    }
+}

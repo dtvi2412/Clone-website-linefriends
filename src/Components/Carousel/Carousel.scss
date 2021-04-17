@@ -1,0 +1,34 @@
+.carousel{
+    position: relative;
+    z-index: 99;
+    &__item{
+        img{
+            width:100%;
+            height: 800px;
+            object-fit: cover;
+        }
+    }
+    //Slick 
+    .slick-dots{
+        bottom: 49px;
+        width: 100%;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+         li{
+            button{
+                &::before{
+                    color:#fff;
+                 
+                }
+            }
+        }
+    }
+    .slick-prev{
+        left:20px;
+    }
+    .slick-next{
+        right:20px;
+    }
+
+}

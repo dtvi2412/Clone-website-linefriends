@@ -1,0 +1,57 @@
+.notice{
+    padding:80px 0;
+
+   
+    &__content{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:60%;
+        margin:0 auto;
+        &__table{
+      
+            border-top:1px solid #d8d8d8;
+          
+            caption{
+                font-size:4rem;
+                color:#404040;
+                font-weight: bolder;
+                margin:30px 0;
+            }
+            thead{
+         
+                tr{
+                    color:#000;
+                    text-align: center;
+                    th{
+                      
+                        padding:20px;
+                        border-bottom: 1px solid #d8d8d8;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{                   
+                        padding:20px;
+                        border-bottom: 1px solid #d8d8d8;
+                    }
+                }
+            }
+        }
+      
+    } 
+     &__navigation{
+         text-align: center;
+        ul{
+            list-style: none;
+            margin-top:40px;
+            li{
+                a{
+                    margin:0 20px;
+                    font-size:0.8rem;
+                }
+            }
+        }
+    }
+}

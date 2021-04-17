@@ -1,0 +1,143 @@
+$bg-color:#faf8f5;
+$cl-title:#404040;
+$cl-button-contact:#fff;
+$bg-button-contact:#5C5E66;
+.coreBusiness{
+    background: $bg-color;
+    padding-top:50px;
+    &__title{
+        color:$cl-title;
+        text-align: center;
+        font-size: 4.4rem;
+    }
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+
+        width: 70%;
+        margin: 0 auto;
+        &__item{
+            margin:0 20px;
+            padding: 0 0px;
+
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            &__image{
+                h1{
+                    text-align: center;
+                    margin: 16px 0 10px;
+                    font-size:1rem;
+                }
+                img{
+                    width:120px;
+                    height:120px;
+                    object-fit: cover;
+          
+                }
+            }
+        }
+        &__description{
+            font-size:0.8rem;
+        }
+    }
+    &__contact{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        
+        margin-top: 70px;
+        a{
+            background-color: $bg-button-contact;
+            color:$cl-button-contact;
+            padding:15px 140px;
+            font-weight: 600;
+            font-size:1.1rem;
+        }
+    }
+    &__listImage{
+        margin-top:70px;
+        position: relative;
+
+        height:650px;
+        //Next and Previos
+        &__button{
+          
+            .next{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                right:60px;
+                .MuiSvgIcon-root{
+                    font-size:3.5rem;
+                    color:#fff;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .back{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left:60px;
+                .MuiSvgIcon-root{
+                    font-size:3.5rem;
+                    color:#fff;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &__image{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition: all .5s;
+           
+          
+        }
+        .location-name{
+            color:#fff;
+            position: absolute;
+            bottom: 40px;
+            left:50%;
+            transform: translate(-50%,-40px);
+
+            font-size:0.8rem;
+            .nameLocation{
+                display: flex;
+                align-items: center;
+            }
+        }
+        &__items{
+            position: absolute;
+            bottom: 20px;
+            left:50%;
+            transform: translate(-50%,-20px);
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin:5px;
+                img{
+                    width: 70px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+            }
+          
+           
+        }
+      
+    }
+}
