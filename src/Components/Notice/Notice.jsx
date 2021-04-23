@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '../Card/Card';
 import './Notice.scss';
 function Notice() {
+  const renderNavigation = () => {
+    let navi = [{ num: 1 }, { num: 2 }, { num: 3 }, { num: 4 }, { num: 5 }];
+    return navi.map((item, index) => {
+      return <a href="#">{item.num}</a>;
+    });
+  };
   return (
     <section className="notice">
       <div className="notice__content">
@@ -37,13 +43,7 @@ function Notice() {
       </div>
       <div className="notice__navigation">
         <ul>
-          <li>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-          </li>
+          <li>{renderNavigation()}</li>
         </ul>
       </div>
       <Card />

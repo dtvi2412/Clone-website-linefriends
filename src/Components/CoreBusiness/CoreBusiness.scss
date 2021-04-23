@@ -141,3 +141,159 @@ $bg-button-contact:#5C5E66;
       
     }
 }
+
+
+@media screen and (max-width:720px) {
+    .coreBusiness{
+        &__title{
+            font-size:2.5rem;
+        }
+        &__items{
+            width:85%;
+        }
+    }
+}
+@media screen and (max-width:630px) {
+    .coreBusiness{
+        &__title{
+            font-size:2.2rem;
+        }
+        &__items{
+            width:90%;
+            &__item{
+               
+                &__image{
+                    img{
+                        width:100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:585px) {
+    .coreBusiness{
+        &__title{
+            font-size:2.4rem;
+        }
+        &__items{
+            width:85%;
+            flex-direction: column;
+            &__description{
+                font-size:0.8rem;
+            }
+            &__item{
+               margin:20px 0px;
+                &__image{
+                    img{
+                        width:130px;
+                        height: 130px;
+                    }
+                    h1{
+                       font-size:1.2rem;
+                    }
+                }
+            }
+        }
+        
+        //LIST IMAGE
+        &__listImage{
+            &__button{
+                .next,.back{
+                    .MuiSvgIcon-root{
+                        font-size:2rem;
+                    }
+                }
+            }
+            &__items{
+                &__item{
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .coreBusiness{
+          //LIST IMAGE
+          &__listImage{
+              .location-name{
+                  .nameLocation{
+                      h1{
+                          font-size:0.9rem;
+                         
+                      }
+                  }
+              }
+            &__button{
+                .next,.back{
+                    .MuiSvgIcon-root{
+                        font-size:2rem;
+                    }
+                }
+            }
+            &__items{
+                flex-direction: column;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                &__item{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .coreBusiness{
+        &__title{
+            font-size:1.8rem;
+        }
+        &__items{
+            width:90%;
+            flex-direction: column;
+            &__description{
+                font-size:0.7rem;
+            }
+            &__item{
+               margin:20px 0px;
+                &__image{
+                    img{
+                        width:100px;
+                        height: 100px;
+                    }
+                    h1{
+                       font-size:1rem;
+                    }
+                }
+            }
+        }
+        &__contact{
+            a{
+                padding:12px 80px;
+                font-size:1rem;
+            }
+        }
+
+        //LIST IMAGE
+        &__listImage{
+            &__button{
+                .next{       
+                    right:30px;
+                }
+                .back{
+                    left:30px;
+                }
+            }
+            &__items{
+                &__item{
+
+                }
+            }
+        }
+    }
+}

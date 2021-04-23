@@ -37,3 +37,29 @@ $bg-color:#383838;
         }
     }
 }
+@media screen and (max-width:880px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+       padding-left:20px;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width:460px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+       padding-left:15px;
+        padding-bottom: 100px;
+        &__logo{
+            h1{
+                font-size:1.2rem;
+            }
+        }
+        &__list{
+            a{
+                font-size:0.8rem;
+            }
+        }
+    }
+}

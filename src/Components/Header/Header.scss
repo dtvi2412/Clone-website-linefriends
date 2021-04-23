@@ -16,6 +16,11 @@ $color-logoScroll:rgb(47, 161, 37);
     left:0;
     right: 0;
     z-index: 9999;
+
+    transition: all 1.2s;
+    &__close{
+        display: none;
+    }
     &__logo{
         .blind{
             color:$color-logo;
@@ -45,6 +50,21 @@ $color-logoScroll:rgb(47, 161, 37);
             }
         }
     }
+    // SELECT
+    &__select{
+        background-color: transparent;
+        font-size:0.8rem;
+        font-family: cursive;
+
+        border:none;
+        color:#fff;
+        option{
+            color:#111;
+        }
+        &:focus{        
+            outline: none;
+        }
+    }
 }
 .headerNavWhite{
     background: #fff;
@@ -59,6 +79,10 @@ $color-logoScroll:rgb(47, 161, 37);
     left:0;
     right: 0;
     z-index: 9999;
+    transition: all 1.2s;
+    &__close{
+        display: none;
+    }
     &__logo{
         .blind{
             color:$color-logoScroll;
@@ -89,5 +113,176 @@ $color-logoScroll:rgb(47, 161, 37);
             }
         }
     }
+    // SELECT
+    &__select{
+        background-color: transparent;
+        font-size:0.8rem;
+        font-family: cursive;
+
+        border:none;
+        color:#111;
+        option{
+            color:#111;
+            
+        }
+        &:focus{        
+            outline: none;
+        }
+    }
     
+}
+.openNav{
+    position: fixed;
+    top:20px;
+    left:20px;
+    z-index: 999;
+    color:#6fe4d9;
+
+    // display: none;
+    // transform: translateX(0px);
+        
+   
+    & > .MuiSvgIcon-root{
+        font-size:2.5rem;
+    }
+
+}
+@media screen and (max-width:1055px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:955px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        transform: translateX(0px);
+        &__logo{
+            .blind{
+                font-size:1.5rem;
+            }
+          
+        }
+        &__nav{   
+            li{
+                margin:0 15px;
+                a{
+
+                    font-size:0.7rem; 
+               
+                }
+            }
+        }
+        &__select{
+            font-size:0.7rem;
+        }
+    }
+    .headerNavWhite{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        transform: translateX(0px);
+        &__logo{
+            .blind{
+                font-size:1.5rem;
+            }
+          
+        }
+        &__nav{   
+            li{
+                margin:0 15px;
+                a{
+
+                    font-size:0.7rem; 
+               
+                }
+            }
+        }
+        &__select{
+            font-size:0.6rem;
+        }
+    }
+}
+@media screen and (max-width:810px){
+    .header{
+        display: flex;
+        flex-direction: column;
+      
+
+        position: fixed;
+        left:0px;
+        top:0px;
+        bottom: 0;
+
+        margin:0px;
+        height: 100%;
+        width: 280px;
+        background-color: #111;
+        border-right: 1px solid #ccc;
+        &__close{
+            display: inline-block;
+            & > .MuiSvgIcon-root{
+                color:#fff;
+            }
+        }
+        &__nav{
+            display: flex;
+            flex-direction: column;
+
+            padding:0px;
+            li{
+                margin: 0px;
+            }
+        }
+    }
+    .headerNavWhite{
+        display: flex;
+        flex-direction: column;
+      
+
+        position: fixed;
+        left:0px;
+        top:0px;
+        bottom: 0;
+
+        margin:0px;
+        height: 100%;
+        width: 280px;
+        // background-color: #fff;
+        background-color: #fdecbc;
+        border-right:1px solid rgb(231, 231, 231);
+        &__close{
+            display: inline-block;
+            & > .MuiSvgIcon-root{
+                color:#111;
+     
+            }
+        }
+        &__nav{
+            display: flex;
+            flex-direction: column;
+
+            padding:0px;
+            li{
+                margin: 0px;
+            }
+        }
+    }
+    .openNav{
+        display: inline-block;
+    }
+   
+}
+@media screen and (max-width:400px) {
+    .openNav{
+        .MuiSvgIcon-root{
+            font-size:2rem;
+        }
+    }
 }

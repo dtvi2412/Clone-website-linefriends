@@ -24,3 +24,91 @@
         }
     }
 }
+@media screen and (max-width:880px){
+ .about{
+    width: 65%;
+    margin:0 auto;
+     &__title{
+         font-size:3.5rem;  
+     }
+ }   
+}
+@media screen and (max-width:690px){
+    .about{
+       width: 75%;
+       margin:0 auto;
+        &__title{
+            font-size:3rem;  
+        }
+    }   
+}
+@media screen and (max-width:580px){
+    .about{
+       width: 85%;
+       margin:0 auto;
+        &__title{
+            font-size:2.5rem;  
+        }
+        &__text{
+            font-size:0.8rem;
+        }
+    }   
+   }
+   @media screen and (max-width:515px){
+    .about{
+       width: 90%;
+       margin:0 auto;
+        &__title{
+            font-size:2.2rem;  
+        }
+        &__text{
+            font-size:0.8rem;
+        }
+    }   
+   }
+   @media screen and (max-width:485px){
+    .about{
+       width: 95%;
+       margin:0 auto;
+      
+        &__title{
+            width:380px;
+            font-size:2.5rem;  
+          
+        }
+        &__text{
+            font-size:0.8rem;
+        }
+    }   
+   }
+   @media screen and (max-width:455px){
+    .about{
+       width: 95%;
+       margin:0 auto;
+      
+        &__title{
+            font-size:2rem;  
+            width:280px;
+          
+        }
+        &__text{
+            font-size:0.8rem;
+        }
+    }   
+   }
+   @media screen and (max-width:300px){
+    .about{
+       width: 95%;
+       margin:0 auto;
+      
+        &__title{
+            font-size:1.5rem;  
+            width:200px;
+           margin:30px auto;
+          
+        }
+        &__text{
+            font-size:0.8rem;
+        }
+    }   
+   }
