@@ -87,12 +87,22 @@ function CoreBusiness() {
       );
     });
   };
+  //Handle Click Image Change Background
+  const handleClickImage = (id) => {
+    setLocation(id);
+  };
   // Render List Show Image Items
   const renderListImageItems = () => {
     return listImageShow.map((item, index) => {
       return (
         <div key={item.id} className="coreBusiness__listImage__items__item">
-          <img src={item.linkImage} alt={`image-show-${item.id}`} />
+          <img
+            onClick={() => {
+              handleClickImage(item.id);
+            }}
+            src={item.linkImage}
+            alt={`image-show-${item.id}`}
+          />
         </div>
       );
     });
