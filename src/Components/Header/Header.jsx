@@ -55,11 +55,6 @@ function Header() {
   //Handle Open Nav
   const handleOpenNav = () => {
     setMenu(true);
-    //Set Atriibute LEFT SIDE
-    // SET TIMEOUT
-    // setTimeout(() => {
-    //   setMenu(true);
-    // }, 500);
   };
   return (
     <React.Fragment>
